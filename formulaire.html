@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Formulaire</title>
+        </body>
+    </head>
+
+<body>
+    <form method="post" action="">
+        <fieldset>
+            <legend>Formulaire d'inscription</legend>
+        
+<table>
+        <tr>
+            <td width="150px" height="40px"><label for="nom">Nom</label></td>
+            <td><input type="text" name="Votre nom" id="Nom" placeholder="saisir votre nom" /></td>
+        </tr>
+
+
+        <tr>
+            <td width="150px" height="40px"><label for="Prenom">Prenom</label></td>
+            <td><input type="text" name="Votre prénom" id="prenom" placeholder="saisir votre prénom"/></td>
+        </tr>
+    
+        
+        <tr>
+           <td width="150px" height="40px"><label for="email">Email</label></td>
+            <td><input type="email" name="Email" id="email" placeholder="saisir votre Email"/></td>
+        </tr>
+    
+    
+        <tr>
+            <td width="150px" height="40px"><label for="Sexe">Sexe</label></td>
+            <td><input type="radio" name="sexe" value="Masculin" id="masculin" checked/> <label for="masculin">Masculin</label>
+            <input type="radio" name="sexe" value="Feminin" id="feminin"/> <label for="feminin">Feminin</label></td>
+        </tr>
+
+        
+        <tr>
+            <td width="150px" height="40px"><label for="photo">Photo</label></td>
+            <td><input type="file" value="choisissez un ficher" id="photo" name="photo" accept="image/png, image/jpeg"></td>
+        </tr>
+    
+        
+        <tr>
+           <td width="150px" height="40px"><label for="pays">Pays</label></td>
+            <td><select name="pays" id="pays">
+                <option value="France" selected>France</option>
+                <option value="Espagne">Espagne</option>
+                <option value="Italie">Italie</option>
+                <option value="Angleterre">Angleterre</option>
+            </select></td>
+        </tr>
+    
+
+        <tr>
+            <td width="150px" height="80px"><label for="langages">Les langages préférés</label></td>
+            <td><select name="langages" id="langages" multiple size="3">
+                <option value="JAVA">JAVA</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="PHP">PHP</option>
+            </select>
+            (Pour faire plusieurs choix maintenir la touche CTRL enfoncée)</td>
+        </tr>
+    
+
+        <tr>
+            <td width="150px" height="80px"><label for="activite">Domaines d'activité</label></td>
+            <td><input type="checkbox" name="activite" value="Informatique" id="informatique" checked><label for="informatique">Informatique</label>
+            <input type="checkbox" name="activite" value="Gestion" id="Gestion"><label for="Gestion">Gestion</label>
+            <input type="checkbox" name="activite" value="pedagogie" id="pedagogie"><label for="pedagogie">Pedagogie</label></td>
+        </tr>
+    </table>
+
+
+
+
+        <input type="submit" value="Envoyer"/>
+        <input type="submit" value="Annuler"/>
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
